@@ -1,0 +1,43 @@
+<div class="container-fluid">
+  <div class="row content">
+    <div class="col-sm-3 sidenav">
+      <ul class="nav nav-pills nav-stacked actionArea">
+        <li>
+			<a data-ui-sref=".Engr" class="ancherPadding">
+				<button class="btn btn-lg btn-primary btn-block btn-dashboard" data-ng-click="callEngr()">Engr</button>
+			</a>
+        </li>
+        <li>
+        	<a data-ui-sref=".Mktg" class="ancherPadding">
+				<button class="btn btn-lg btn-primary btn-block btn-dashboard" data-ng-click="callMktg()">Mktg</button>
+			</a>
+        </li>
+        <li>
+        	<a data-ui-sref=".Sales" class="ancherPadding">
+				<button class="btn btn-lg btn-primary btn-block btn-dashboard" data-ng-click="callSales()">Sales</button>
+			</a>
+        </li>
+        <li>
+        	<a data-ui-sref=".Total" class="ancherPadding">
+				<button class="btn btn-lg btn-primary btn-block btn-dashboard" data-ng-click="callTotal()">Total</button>
+			</a>
+        </li>
+      </ul><br>
+    </div>
+
+    <div class="col-sm-9">
+      <!-- <h4>{{}}</h4> -->
+      <hr>
+      <div class="graphBox" data-ui-view>
+      </div>
+
+    </div>
+    <div class="col-sm-12 logoutFooter">
+    	<button class="btn pull-left btn-logout" data-ng-click="barChart()">Bar</button>
+    	<button class="btn pull-left btn-logout" data-ng-click="pieChart()">Pie</button>
+    	<button class="btn pull-right btn-logout" data-ng-click="logout()">Logout</button>
+    </div>
+  </div>
+  
+</div>
+
