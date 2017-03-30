@@ -1,0 +1,46 @@
+<!--
+    you can substitue the span of reauth email for a input with the email and
+    include the remember me checkbox
+    -->
+    <div class="container">
+        <div class="card card-container">
+            <img id="profile-img" alt="User Profile pic" class="profile-img-card" src="//ssl.gstatic.com/accounts/ui/avatar_2x.png" />
+            <p id="profile-name" class="profile-name-card"></p>
+            <form class="form-signin" name="login">
+                <span id="reauth-email" class="reauth-email"></span>
+                
+                <!-- User Name -->
+                <input type="text" data-ng-model="userName" id="inputEmail" class="form-control" placeholder="User Name" name="UserName" required autofocus>
+                	<span style = "color:red" data-ng-show = "login.UserName.$dirty && login.UserName.$invalid">
+                        <span data-ng-show = "login.UserName.$error.required">UserName is required.</span>
+                     </span>
+                 <!-- End User Name -->
+                     
+                <!-- Password -->
+                <input type="password" data-ng-model="passWord" id="inputPassword" class="form-control" placeholder="Password" name="passWord" required>
+                	<span style = "color:red" data-ng-show = "login.passWord.$dirty && login.passWord.$invalid">
+                        <span data-ng-show = "login.passWord.$error.required">Password is required.</span>
+                     </span>
+                 <!-- End Password -->
+                 
+                 <div class="g-recaptcha" data-ng-model="isTrue" data-sitekey="6LfJMhkUAAAAAIKNmeYt6FVfbzOFMaZfXGEwCccu"></div>
+                 
+                <div id="remember" class="checkbox">
+                    <label>
+                        <input type="checkbox" value="remember-me"> Remember me
+                    </label>
+                </div>
+                
+                <span style = "color:red" data-ng-bind="errorMesssage"></span>
+                
+                <button class="btn btn-lg btn-primary btn-block btn-signin" data-ng-disabled = "login.UserName.$dirty &&
+                        login.UserName.$invalid || login.passWord.$dirty &&
+                        login.passWord.$invalid" data-ng-click="submit()" type="submit">Sign in</button>
+                        
+            </form><!-- /form -->
+            
+            <a href="#" class="forgot-password">
+                Forgot the password?
+            </a>
+        </div><!-- /card-container -->
+    </div><!-- /container -->
