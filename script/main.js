@@ -1,6 +1,6 @@
  'use strict';
 
-var mainApp = angular.module("myApp",["ui.router", "angularCharts","vcRecaptcha"]);
+var mainApp = angular.module("myApp",["ui.router", "angularCharts" /*,"vcRecaptcha"*/]);
 
 mainApp.config(function($stateProvider, $urlRouterProvider) {
 	
