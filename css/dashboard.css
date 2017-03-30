@@ -1,0 +1,62 @@
+
+.content{
+	/* min-height: 200px; */
+ 	max-width : 1000px;
+ 	/* margin : 20px auto; */
+ 	margin: 0 auto 25px;
+    margin-top: 50px;
+    background-color: #F7F7F7;
+    padding: 20px;
+	/* background-color: #f1f1f1; */
+}
+  
+.btn-dashboard {
+	margin: 16px 0;
+	height: 40px;
+}  
+
+.btn-logout{
+	margin: 16px 30px 16px 0;
+	height: 40px;
+	color: white;
+	width: 106px;
+}  
+
+.actionArea{
+	margin-top: 25%;
+}
+
+.graphBox{
+	background-color: #fff;
+	margin: 15px;
+	width : 650px;
+	height: 400px;
+	padding: 50px;
+	/* border: 1px solid black; */
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.sidenav {
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    /* .logoutFooter {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    } */
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height: auto;} 
+    }
+    
+  .ancherPadding{
+  	padding: none !important;
+  	cursor: pointer;
+  }
